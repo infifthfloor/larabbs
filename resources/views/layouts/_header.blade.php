@@ -26,7 +26,7 @@
             <img src="https://cdn.learnku.com/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/60/h/60" class="img-responsive img-circle" width="30px" height="30px">
             {{ Auth::user()->name }}
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display:block">
             <a class="dropdown-item" href="">个人中心</a>
             <a class="dropdown-item" href="">编辑资料</a>
             <div class="dropdown-divider"></div>
