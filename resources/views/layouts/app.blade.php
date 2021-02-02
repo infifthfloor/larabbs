@@ -14,6 +14,8 @@
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
+  @yield('styles')
+
 </head>
 
 <body>
@@ -34,6 +36,10 @@
 
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+
+  @yield('scripts')
+
 </body>
 
 </html>
