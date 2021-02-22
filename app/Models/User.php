@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
+use Spatie\Permission\Traits\HasRoles;
 use Auth;
 
 class User extends Authenticatable implements MustVerifyEmailContract
 {
+    use HasRoles;
     use HasFactory, MustVerifyEmailTrait;
 
     use Notifiable {
