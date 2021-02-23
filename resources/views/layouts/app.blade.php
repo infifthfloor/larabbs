@@ -35,6 +35,10 @@
     @include('layouts._footer')
   </div>
 
+  @if (app()->isLocal())
+    @include('sudosu::user-selector')
+  @endif
+
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
